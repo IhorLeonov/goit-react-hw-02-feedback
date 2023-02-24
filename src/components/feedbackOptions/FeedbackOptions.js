@@ -1,11 +1,17 @@
-export const FeedbackOptions = () => {
+import { Button, Options } from './FeedbackOptions.styled';
+
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
-      <p>Good:</p>
-      <p>Netural</p>
-      <p>Bad</p>
-      <p>Total</p>
-      <p>Positive feedback</p>
-    </div>
+    <Options>
+      {options.map(option => (
+        <Button
+          key={option}
+          type="button"
+          onClick={() => onLeaveFeedback(option)}
+        >
+          {option}
+        </Button>
+      ))}
+    </Options>
   );
 };

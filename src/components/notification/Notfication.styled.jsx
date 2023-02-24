@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
+export const Notify = styled.p`
   margin-top: 10px;
-  text-align: left;
 `;
