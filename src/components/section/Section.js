@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import { SectionBox } from 'components/section/Section.styled';
+import PropTypes from 'prop-types';
+
 export const Section = ({ children, title }) => {
   return (
     <SectionBox>

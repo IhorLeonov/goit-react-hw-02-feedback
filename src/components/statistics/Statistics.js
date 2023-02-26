@@ -1,5 +1,6 @@
 import { Wrapper } from 'components/statistics/Statistics.styled';
 import { Notification } from 'components/notification/Notification';
+import PropTypes from 'prop-types';
 
 export const Statistics = ({
   good,
@@ -23,4 +24,12 @@ export const Statistics = ({
       )}
     </>
   );
+};
+
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
